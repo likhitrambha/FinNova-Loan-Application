@@ -1,6 +1,6 @@
 .banner{
     background-image: url('https://res.cloudinary.com/ds3qgsy6r/image/upload/v1790939644/Modern_Loan_Services_Banner_g5fymg.png');
-    height: 92vh;
+    height: 91vh;
     width: 100%;
     background-size: cover;
     background-position: center;
@@ -19,4 +19,93 @@
     margin-top: 20px;
     color: rgb(0, 0, 0);
     width: 40%;
+}
+.benefits{
+    height: 100vh;
+    width: 100%;
+    background-image: url('https://res.cloudinary.com/ds3qgsy6r/image/upload/v1790948708/Soft_Blue_Mint_Gradient_Background_tnomrg.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    transition: all 0.3s ease-in-out;
+}
+.benifits-Header{
+    margin-bottom: 40px;
+}
+.Apply-Button{
+    width: 150px;
+    height: 50px;
+    max-height: 55px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: rgb(255, 0, 0);
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border: solid 2px brown;
+    border-radius: 20px;
+}
+.Apply-Button:hover{
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+}
+.benefitCardSection{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 40px;
+}
+.benefitCard{
+    width: 300px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+}
+.benefitCard:hover{
+    width: 310px;
+    height: 210px;
+    margin: 15px;
+    padding: 25px;
+    /* background-color: red; */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+.benefitCardIcon{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.thunder{
+    color: goldenrod;
+}
+.lowRate{
+    color: green;
+}
+.docs{
+    color: grey;
+}
+.money{
+    color: green;
+}
+.time{
+    color: navy;
+}
+.benefitCardTitle{
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+.benefitCardDescription{
+    text-align: center;
+    font-size: 16px;
 }

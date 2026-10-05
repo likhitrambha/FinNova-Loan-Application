@@ -1,6 +1,6 @@
 
 .Form-Page{
-    height: 92vh;
+    height: 91vh;
     background-image: url('https://res.cloudinary.com/ds3qgsy6r/image/upload/v1790948708/Soft_Blue_Mint_Gradient_Background_tnomrg.png');
     background-size: cover;
     background-position: center;
@@ -13,7 +13,7 @@
     min-height: 70%;
     width: 400px;
     border-radius: 20px;
-    padding: 10px 20px 10px 50px;
+    padding: 40px 20px 40px 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

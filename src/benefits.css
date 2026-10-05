@@ -1,4 +1,4 @@
-.benefits{
+/* .benefits{
     height: 100vh;
     width: 100%;
     background-image: url('https://res.cloudinary.com/ds3qgsy6r/image/upload/v1790948708/Soft_Blue_Mint_Gradient_Background_tnomrg.png');
@@ -11,7 +11,7 @@
     padding: 40px;
     transition: all 0.3s ease-in-out;
 }
-.benifits-Header{
+.benefits-Header{
     margin-bottom: 40px;
 }
 .Apply-Button{
@@ -31,4 +31,4 @@
 .Apply-Button:hover{
     font-size: 18px;
     transition: all 0.3s ease-in-out;
-}
+} */

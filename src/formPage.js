@@ -47,7 +47,7 @@ const FormPage = ({handleInputChange, handleSubmit, formData}) => {
 
         <div>
             <label htmlFor="loan-amount" className='label-name'>Loan Amount:</label><br/>
-            <input type="number" id="loan-amount" name="loanAmount" value={formData.loanAmount} onChange={handleInputChange} required className='input-name'/>
+            <input type="tel" id="loan-amount" name="loanAmount" value={formData.loanAmount} onChange={handleInputChange} required className='input-name'/>
         </div>
 
         <select id="employment-type" name="employmentType" value={formData.employmentType} onChange={handleInputChange} required className="input-name">
@@ -59,7 +59,7 @@ const FormPage = ({handleInputChange, handleSubmit, formData}) => {
         </select>
         <div>
             <label htmlFor="monthly-income" className='label-name'>Monthly Income:</label><br/>
-            <input type="number" id="monthly-income" name="monthlyIncome" value={formData.monthlyIncome} onChange={handleInputChange} required className='input-name'/>
+            <input type="tel" id="monthly-income" name="monthlyIncome" value={formData.monthlyIncome} onChange={handleInputChange} required className='input-name'/>
         </div>
 
         <button type="submit" className='submit-button'>Submit</button>
