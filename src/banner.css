@@ -1,0 +1,22 @@
+.banner{
+    background-image: url('https://res.cloudinary.com/ds3qgsy6r/image/upload/v1790939644/Modern_Loan_Services_Banner_g5fymg.png');
+    height: 92vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    padding: 20px 20px;
+    text-align: center;
+}
+.banner-text{
+    margin-top: 28vh;
+    font-size: 54px;
+    font-weight: bold;
+    color: rgb(0, 35, 80);
+    width: 40%;
+}
+.banner-subtext{
+    font-size: 24px;
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+    width: 40%;
+}

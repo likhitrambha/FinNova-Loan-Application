@@ -1,0 +1,45 @@
+
+.Form-Page{
+    height: 92vh;
+    background-image: url('https://res.cloudinary.com/ds3qgsy6r/image/upload/v1790948708/Soft_Blue_Mint_Gradient_Background_tnomrg.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.Form-Container{
+    background-color: rgba(255, 255, 255, 0.8);
+    min-height: 70%;
+    width: 400px;
+    border-radius: 20px;
+    padding: 10px 20px 10px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+}
+.label-name{
+    font-size: 12px;
+}
+.input-name{
+    width: 300px;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.submit-button{
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 100px;
+}
+.form-image{
+    width: 30%;
+    height: auto;
+}
