@@ -48,6 +48,8 @@ app.post('/api/user', async (req,res) => {
 
 })
 
-app.listen(5000, ()=> {
-    console.log('Backend Running')
-})
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, () => {
+    console.log(`Backend Running on port ${PORT}`);
+});
