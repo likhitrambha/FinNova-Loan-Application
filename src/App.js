@@ -78,7 +78,7 @@ function App() {
     e.preventDefault();
 
     try{
-      const response = await fetch('http://localhost:5000/api/user',{
+      const response = await fetch('https://finnova-loan-application.onrender.com/api/user',{
         method: 'POST',
         headers:{
           "Content-Type": 'application/json'
