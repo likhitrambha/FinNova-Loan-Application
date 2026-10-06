@@ -42,8 +42,13 @@ app.post('/api/user', async (req,res) => {
             message: "Data received Sucessefully",
             data: req.body
         });
-    }catch(error){
+    }catch (error) {
         console.log(error);
+
+        res.status(500).json({
+            message: "Failed to save data",
+            error: error.message
+        });
     }
 
 })
