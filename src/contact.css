@@ -1,0 +1,149 @@
+/* *{
+    outline: solid 1px red;
+} */
+.contact-page {
+    min-height: 100vh;
+    padding: 20px 8%;
+    background-image: url('https://res.cloudinary.com/ds3qgsy6r/image/upload/v1790948708/Soft_Blue_Mint_Gradient_Background_tnomrg.png');
+}
+
+.contact-heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-heading h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #182b27;
+}
+
+.contact-heading p {
+    color: #68736f;
+    font-size: 16px;
+}
+
+
+.contact-content {
+    max-width: 1050px;
+    margin: auto;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+
+.contact-info {
+    flex: 1;
+    padding: 35px;
+}
+
+.contact-info h2 {
+    color: #182b27;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.contact-info > p {
+    color: #68736f;
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+.supportImg{
+    width: 100%;
+}
+
+.contact-detail h4 {
+    margin: 0 0 5px;
+    color: #182b27;
+}
+
+.contact-detail p {
+    margin: 0;
+    color: #68736f;
+}
+
+.contact-form {
+    flex: 1;
+    padding: 35px;
+
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(22, 132, 91, 0.12);
+
+    border-radius: 18px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.contact-form h2 {
+    color: #182b27;
+    font-size: 26px;
+    margin-bottom: 25px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    margin-bottom: 7px;
+    color: #34433e;
+    font-weight: 500;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 12px 14px;
+
+    border: 1px solid #d9e2de;
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    font-size: 14px;
+    font-family: inherit;
+
+    outline: none;
+
+    box-sizing: border-box;
+
+    transition: 0.3s;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    border-color: #16845b;
+    box-shadow: 0 0 0 2px rgba(22, 132, 91, 0.08);
+}
+
+.input-group textarea {
+    resize: vertical;
+}
+
+.contact-btn {
+    width: 100%;
+    padding: 13px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #16845b;
+    color: white;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.contact-btn:hover {
+    background: #106b49;
+    transform: translateY(-2px);
+}
