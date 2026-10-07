@@ -9,13 +9,18 @@ app.use(cors());
 app.use(express.json());
 
 mongoose.connect(process.env.MONGODB_URL)
-.then(()=>{
+.then(() => {
     console.log('Mongo Connected');
     console.log('Database:', mongoose.connection.name);
 })
-.catch((error)=>{
-    console.log(error)
-})
+.catch((error) => {
+    console.log(error);
+});
+
+
+// ==========================
+// Loan Application
+// ==========================
 
 const user_schema = new mongoose.Schema({
     name: String,
@@ -28,21 +33,26 @@ const user_schema = new mongoose.Schema({
     loanAmount: String,
     employmentType: String,
     monthlyIncome: String
-    
-})
+});
 
-const User = mongoose.model('User', user_schema)
+const User = mongoose.model('User', user_schema);
 
-app.post('/api/user', async (req,res) => {
+
+app.post('/api/user', async (req, res) => {
+
     console.log(req.body);
 
-    try{
-        const user = await User.create(req.body)
+    try {
+
+        const user = await User.create(req.body);
+
         res.json({
             message: "Data received Sucessefully",
             data: req.body
         });
-    }catch (error) {
+
+    } catch (error) {
+
         console.log(error);
 
         res.status(500).json({
@@ -50,8 +60,46 @@ app.post('/api/user', async (req,res) => {
             error: error.message
         });
     }
+});
 
-})
+
+// ==========================
+// Contact Us
+// ==========================
+
+const contact_schema = new mongoose.Schema({
+    name: String,
+    email: String,
+    query: String
+});
+
+const Contact = mongoose.model('Contact', contact_schema);
+
+
+app.post('/api/contact', async (req, res) => {
+
+    console.log(req.body);
+
+    try {
+
+        const contact = await Contact.create(req.body);
+
+        res.json({
+            message: "Message sent successfully",
+            data: contact
+        });
+
+    } catch (error) {
+
+        console.log(error);
+
+        res.status(500).json({
+            message: "Failed to save message",
+            error: error.message
+        });
+    }
+});
+
 
 const PORT = process.env.PORT || 5000;
 

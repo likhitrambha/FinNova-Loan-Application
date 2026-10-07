@@ -17,7 +17,7 @@ const NavBar = () => {
         <li><Link to="/" className= 'Nav-Item'>Home</Link></li>
         <li><a href="#benefits" className= 'Nav-Item'>About</a></li>
         <li><a href="#benefits" className= 'Nav-Item'>Loans</a></li>
-        <li><Link to="/form" className= 'Nav-Item'>Contact Us</Link></li>
+        <li><Link to="/contact" className= 'Nav-Item'>Contact Us</Link></li>
         <li><button onClick={() => navigate("/form")} className= 'nav-btn'>Apply Now</button></li>
       </ul>
     </nav>

@@ -3,7 +3,7 @@ import {Toaster, toast} from 'react-hot-toast';
 import './App.css';
 import NavBar from './NavBar';
 import Banner from './banner';
-// import Contact from './contact';
+import Contact from './contact';
 import Footer from './footer';
 import {Routes, Route} from 'react-router-dom';
 import FormPage from './formPage';
@@ -129,7 +129,7 @@ function App() {
           </>
         } />
         <Route path='/form' element={<FormPage handleInputChange={handleInputChange} handleSubmit={handleSubmit} formData={formData}/>} />
-        <Route path='/form' element={<Contact />} />
+        <Route path='/contact' element={<Contact />} />
       </Routes>
       <Footer />
     </div>
