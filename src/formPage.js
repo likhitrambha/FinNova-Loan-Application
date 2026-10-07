@@ -1,7 +1,7 @@
 import React from 'react'
 import './formPage.css'
 
-const FormPage = ({handleInputChange, handleSubmit, formData}) => {
+const FormPage = ({handleInputChange, handleSubmit, formData, toast}) => {
   return (
     <div className= 'Form-Page'>
       <form className= 'Form-Container' onSubmit={handleSubmit}>

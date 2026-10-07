@@ -57,7 +57,7 @@ const banner = () => {
           </div>
       </div>
         
-      <a href="/contact"><button className='Apply-Button'>Apply Now</button></a>
+      <a href="/form"><button className='Apply-Button'>Apply Now</button></a>
       </div>
 
       

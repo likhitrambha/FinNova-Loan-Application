@@ -1,0 +1,44 @@
+.footer-container{
+    padding: 40px 10px;
+    background-color: rgb(1, 53, 121);
+    color: #ffffff;
+}
+.footer-top-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    border-bottom: solid 1px #ffffff;
+    padding-bottom: 40px;
+    margin-bottom: 10px;
+    /* background-image: url('https://res.cloudinary.com/ds3qgsy6r/image/upload/v1791359970/Dark_Emerald_Neon_Waves_xmcjbc.png'); */
+    /* background-size: cover; */
+    /* background-position: center; */
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.nav-contact-Item{
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+.services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: start;
+}
+.footer-icon{
+    margin-right: 5px;
+}
+.footer-link-Item{
+    color: #ffffff;
+    text-decoration: none;
+    padding: 2px;
+}

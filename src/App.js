@@ -1,8 +1,10 @@
 import React from 'react';
+import {Toaster, toast} from 'react-hot-toast';
 import './App.css';
 import NavBar from './NavBar';
 import Banner from './banner';
-// import Benefits from './benefits';
+// import Contact from './contact';
+import Footer from './footer';
 import {Routes, Route} from 'react-router-dom';
 import FormPage from './formPage';
 import {useState} from 'react';
@@ -94,9 +96,24 @@ function App() {
 
     console.log("Server response:", data);
 
+    toast.success('Application Submitted Succcessfully!')
+
+    setFormData({
+      name: '',
+      mobile: '',
+      dob: '',
+      email: '',
+      pan: '',
+      address: '',
+      loanType: '',
+      loanAmount: '',
+      employmentType: '',
+      monthlyIncome: ''
+    });
 
     }catch (error){
       console.log(error);
+      toast.error('Failed to submit the application!')
     }
 
   }
@@ -104,14 +121,17 @@ function App() {
   return (
     <div className="App">           
       <NavBar />
+      <Toaster position='top-center' toastOptions={{duration:3000,}} />
       <Routes>
         <Route path='/' exact element={
           <>
             <Banner />
           </>
         } />
-        <Route path='/contact' element={<FormPage handleInputChange={handleInputChange} handleSubmit={handleSubmit} formData={formData}/>} />
+        <Route path='/form' element={<FormPage handleInputChange={handleInputChange} handleSubmit={handleSubmit} formData={formData}/>} />
+        <Route path='/form' element={<Contact />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
