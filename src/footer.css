@@ -1,44 +1,219 @@
-.footer-container{
+/* ========================= */
+/* Footer Container */
+/* ========================= */
+
+.footer-container {
     padding: 40px 10px;
+
     background-color: rgb(1, 53, 121);
+
     color: #ffffff;
+
+    box-sizing: border-box;
 }
-.footer-top-section{
+
+
+/* ========================= */
+/* Footer Top Section */
+/* ========================= */
+
+.footer-top-section {
     display: flex;
+
     justify-content: space-around;
-    align-items: start;
+
+    align-items: flex-start;
+
     border-bottom: solid 1px #ffffff;
+
     padding-bottom: 40px;
+
     margin-bottom: 10px;
-    /* background-image: url('https://res.cloudinary.com/ds3qgsy6r/image/upload/v1791359970/Dark_Emerald_Neon_Waves_xmcjbc.png'); */
-    /* background-size: cover; */
-    /* background-position: center; */
+
+    gap: 30px;
 }
-.links{
+
+
+/* ========================= */
+/* Links */
+/* ========================= */
+
+.links {
     display: flex;
+
     flex-direction: column;
+
     justify-content: flex-start;
+
     align-items: flex-start;
 }
-.nav-contact-Item{
+
+
+/* ========================= */
+/* Contact Items */
+/* ========================= */
+
+.nav-contact-Item {
     font-size: 16px;
+
     display: flex;
+
     justify-content: center;
+
     align-items: center;
+
     margin-top: 5px;
 }
-.services{
+
+
+/* ========================= */
+/* Services */
+/* ========================= */
+
+.services {
     display: flex;
+
     flex-direction: column;
+
     justify-content: center;
-    align-items: start;
+
+    align-items: flex-start;
+
     text-align: start;
 }
-.footer-icon{
+
+
+/* ========================= */
+/* Footer Icons */
+/* ========================= */
+
+.footer-icon {
     margin-right: 5px;
 }
-.footer-link-Item{
+
+
+/* ========================= */
+/* Footer Links */
+/* ========================= */
+
+.footer-link-Item {
     color: #ffffff;
+
     text-decoration: none;
+
     padding: 2px;
+
+    background: none;
+
+    border: none;
+
+    font-family: inherit;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    text-align: left;
+}
+
+
+/* ========================= */
+/* Footer Link Hover */
+/* ========================= */
+
+.footer-link-Item:hover {
+    color: #2E9E2E;
+
+    text-decoration: underline;
+
+    transition: 0.5s;
+}
+
+
+/* ================================================= */
+/* BELOW 768px */
+/* ================================================= */
+
+@media (max-width: 768px) {
+
+    .footer-container {
+        padding: 35px 20px;
+    }
+
+
+    .footer-top-section {
+        display: flex;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        align-items: flex-start;
+
+        gap: 25px;
+
+        padding-bottom: 30px;
+    }
+
+
+    /* ========================= */
+    /* Logo + Contact */
+    /* ========================= */
+
+    .footer-top-section > div:first-child {
+        width: 100%;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        text-align: center;
+    }
+
+
+    /* ========================= */
+    /* Links + Services */
+    /* ========================= */
+
+    .links,
+    .services {
+        width: 45%;
+
+        min-width: 0;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        text-align: center;
+    }
+
+
+    /* ========================= */
+    /* Contact Items */
+    /* ========================= */
+
+    .nav-contact-Item {
+        justify-content: center;
+
+        font-size: 15px;
+    }
+
+
+    /* ========================= */
+    /* Footer Links */
+    /* ========================= */
+
+    .footer-link-Item {
+        font-size: 15px;
+
+        text-align: center;
+
+        padding: 5px 10px;
+    }
+
 }

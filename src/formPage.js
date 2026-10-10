@@ -1,7 +1,19 @@
-import React from 'react'
-import './formPage.css'
+import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+import './formPage.css';
 
-const FormPage = ({handleInputChange, handleSubmit, formData, toast}) => {
+const FormPage = ({handleInputChange, handleSubmit, formData, setFormData}) => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.state?.loanType) {
+      setFormData((prevData) => ({
+        ...prevData,
+        loanType: location.state.loanType
+      }));
+    }
+  }, [location.state, setFormData]);
+
   return (
     <div className= 'Form-Page'>
       <form className= 'Form-Container' onSubmit={handleSubmit}>

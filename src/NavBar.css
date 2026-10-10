@@ -1,84 +1,435 @@
-nav{
+nav {
     width: 100%;
+    box-sizing: border-box;
     height: 70px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     padding: 10px 20px;
+
     background-color: rgb(1, 53, 121);
+
     color: white;
+
     font-family: calibri, sans-serif;
-    /* position: fixed; */
+
+    position: relative;
+
+    z-index: 1000;
 }
-.Nav-Logo-Text{
+
+
+/* ========================= */
+/* Logo */
+/* ========================= */
+
+.Nav-Logo-Text {
     font-size: 28px;
     font-family: Arial, sans-serif;
     width: 100px;
-    }
-/* .nav-logo{
-    outline: solid red;
-    width: 200px;
-} */
+}
+
+
+/* ========================= */
+/* FinNova Logo Animation */
+/* ========================= */
+
 .nova {
-  color: white;
-  animation: novaReveal 1.2s ease forwards;
-  animation-delay: 4s;
+    color: white;
+
+    animation: novaReveal 0.1s ease forwards;
+
+    animation-delay: 4s;
 }
 
 @keyframes novaReveal {
-  0% {
-    color: white;
-    text-shadow: none;
-  }
 
-  30% {
-    color: #32d583;
-    /* text-shadow: 0 0 8px rgba(50, 213, 131, 0.8); */
-  }
+    0% {
+        color: white;
+        text-shadow: none;
+    }
 
-  100% {
-    color: #00a878;
-    text-shadow: none;
-  }
+    30% {
+        color: #32d583;
+    }
+
+    100% {
+        color: #00a878;
+        text-shadow: none;
+    }
 }
 
-.Nav-Logo-Subtext{
+
+/* ========================= */
+/* Logo Subtext */
+/* ========================= */
+
+.Nav-Logo-Subtext {
     font-size: 18px;
     color: #ffffff;
 }
 
-.Nav-List{
+
+/* ========================= */
+/* Navigation List */
+/* ========================= */
+
+.Nav-List {
     display: flex;
+
     justify-content: space-between;
     align-items: center;
+
     list-style: none;
+
+    margin: 0;
+    padding: 0;
 }
-.Nav-Item{
+
+
+/* ========================= */
+/* Navigation Links */
+/* ========================= */
+
+.Nav-Item {
     padding: 0 20px;
+
     text-decoration: none;
+
     color: white;
+
     font-size: 18px;
 }
-.nav-btn{
-    /* background-color: #2E9E2E; */
-    background-color: #04AA6D;
-    color: white;
+
+
+/* ========================= */
+/* About Button */
+/* ========================= */
+
+.nav-about-btn {
+    background: none;
+
     border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
+
+    outline: none;
+
     cursor: pointer;
+
+    font-family: inherit;
+
+    color: white;
+
+    font-size: 18px;
+
+    padding: 0 20px;
+}
+
+
+/* About Hover */
+
+.nav-about-btn:hover {
+    color: #2E9E2E;
+
+    text-decoration: underline;
+
+    transition: 0.5s;
+}
+
+
+/* ========================= */
+/* Apply Button */
+/* ========================= */
+
+.nav-btn {
+    background-color: #04AA6D;
+
+    color: white;
+
+    border: none;
+
+    padding: 5px 10px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
     font-size: 16px;
 }
-.nav-btn:hover{
-    /* background-color: rgb(0, 90, 0); */
+
+.nav-btn:hover {
     background-color: #04AA6D;
-    /* background-color: #008000; */
+
     color: white;
-    transition: 1.0s;
+
+    transition: 1s;
+
     border-radius: 30px;
 }
-.Nav-Item:hover{
+
+
+/* ========================= */
+/* Navigation Hover */
+/* ========================= */
+
+.Nav-Item:hover {
     color: #2E9E2E;
+
     text-decoration: underline;
+
     transition: 0.5s;
+}
+
+
+/* ========================= */
+/* Hamburger */
+/* ========================= */
+
+.hamburger {
+    display: none;
+
+    background: none;
+
+    border: none;
+
+    color: white;
+
+    font-size: 30px;
+
+    cursor: pointer;
+
+    padding: 5px;
+
+    z-index: 1100;
+}
+
+
+/* ================================================= */
+/* MOBILE NAVBAR */
+/* ================================================= */
+
+@media (max-width: 768px) {
+
+    nav {
+        position: relative;
+
+        height: 70px;
+        min-height: 70px;
+
+        padding: 10px 20px;
+
+        z-index: 1000;
+    }
+
+
+    /* ========================= */
+    /* Logo */
+    /* ========================= */
+
+    .Nav-Logo-Text {
+        font-size: 25px;
+    }
+
+    .Nav-Logo-Subtext {
+        font-size: 14px;
+    }
+
+
+    /* ========================= */
+    /* Hamburger */
+    /* ========================= */
+
+    .hamburger {
+        display: block;
+
+        margin-left: auto;
+
+        z-index: 1100;
+    }
+
+
+    /* ================================================= */
+    /* MOBILE MENU */
+    /* ================================================= */
+
+    .Nav-List {
+        display: none;
+
+        position: absolute;
+
+        top: 70px;
+
+        left: 0;
+
+        right: 0;
+
+        width: 100%;
+
+        box-sizing: border-box;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        justify-content: flex-start;
+
+        gap: 0;
+
+        padding: 15px 20px 20px;
+
+        margin: 0;
+
+        list-style: none;
+
+
+        /* ========================= */
+        /* Glossy Background */
+        /* ========================= */
+
+        background: rgba(1, 53, 121, 0.88);
+
+        backdrop-filter: blur(12px);
+
+        -webkit-backdrop-filter: blur(12px);
+
+
+        /* ========================= */
+        /* Glossy Border */
+        /* ========================= */
+
+        border-top: 1px solid rgba(255, 255, 255, 0.25);
+
+        border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+
+
+        /* ========================= */
+        /* Glossy Shadow */
+        /* ========================= */
+
+        box-shadow:
+            0 10px 30px rgba(0, 0, 0, 0.30),
+            inset 0 1px 0 rgba(255, 255, 255, 0.25);
+
+        z-index: 1050;
+    }
+
+
+    /* ========================= */
+    /* Show Menu */
+/* ========================= */
+
+    .Nav-List.active {
+        display: flex;
+
+        animation: menuOpen 0.25s ease-in-out;
+    }
+
+
+    /* ========================= */
+    /* Menu Items */
+/* ========================= */
+
+    .Nav-List li {
+        width: 100%;
+
+        text-align: center;
+
+        padding: 5px 0;
+    }
+
+
+    /* ========================= */
+    /* Mobile Links */
+/* ========================= */
+
+    .Nav-Item {
+        display: block;
+
+        width: 100%;
+
+        box-sizing: border-box;
+
+        padding: 10px 20px;
+
+        font-size: 17px;
+
+        border-radius: 8px;
+    }
+
+
+    /* ========================= */
+    /* Mobile About */
+/* ========================= */
+
+    .nav-about-btn {
+        display: block;
+
+        width: 100%;
+
+        box-sizing: border-box;
+
+        padding: 10px 20px;
+
+        font-size: 17px;
+
+        border-radius: 8px;
+
+        background: transparent;
+
+        color: white;
+
+        text-decoration: none;
+    }
+
+
+    /* Mobile Link Hover */
+
+    .Nav-Item:hover,
+    .nav-about-btn:hover {
+        color: white;
+
+        text-decoration: none;
+
+        background: rgba(255, 255, 255, 0.12);
+
+        transition: 0.3s;
+    }
+
+
+    /* ========================= */
+    /* Mobile Apply Button */
+/* ========================= */
+
+    .nav-btn {
+        padding: 8px 20px;
+
+        font-size: 15px;
+
+        margin-top: 5px;
+
+        border-radius: 8px;
+    }
+
+}
+
+
+/* ========================= */
+/* Menu Animation */
+/* ========================= */
+
+@keyframes menuOpen {
+
+    from {
+        opacity: 0;
+
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+
 }

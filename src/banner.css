@@ -1,116 +1,537 @@
-.banner{
-    background-image: url('https://res.cloudinary.com/ds3qgsy6r/image/upload/v1790939644/Modern_Loan_Services_Banner_g5fymg.png');
-    height: 91vh;
+/* ========================= */
+/* Banner */
+/* ========================= */
+
+.banner {
     width: 100%;
+    min-height: 91vh;
+    box-sizing: border-box;
+
+    background-image: url('https://res.cloudinary.com/ds3qgsy6r/image/upload/v1790939644/Modern_Loan_Services_Banner_g5fymg.png');
     background-size: cover;
     background-position: center;
-    padding: 20px 20px;
+    background-repeat: no-repeat;
+
+    padding: 20px;
     text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
-.banner-text{
-    margin-top: 28vh;
-    font-size: 54px;
+
+
+/* ========================= */
+/* Banner Heading */
+/* ========================= */
+
+.banner-text {
+    margin: 0;
+
+    font-size: clamp(40px, 4vw, 54px);
     font-weight: bold;
+
     color: rgb(0, 35, 80);
+
     width: 40%;
 }
-.banner-subtext{
-    font-size: 24px;
+
+
+/* ========================= */
+/* Banner Description */
+/* ========================= */
+
+.banner-subtext {
+    font-size: clamp(18px, 2vw, 24px);
+
     margin-top: 20px;
+
     color: rgb(0, 0, 0);
+
     width: 40%;
+
+    line-height: 1.5;
 }
-.benefits{
-    height: 100vh;
+
+
+/* ========================= */
+/* Benefits Section */
+/* ========================= */
+
+.benefits {
+    min-height: 100vh;
     width: 100%;
+    box-sizing: border-box;
+
     background-image: url('https://res.cloudinary.com/ds3qgsy6r/image/upload/v1790948708/Soft_Blue_Mint_Gradient_Background_tnomrg.png');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     padding: 40px;
-    transition: all 0.3s ease-in-out;
 }
-.benifits-Header{
-    margin-bottom: 40px;
+
+
+/* ========================= */
+/* Benefits Header */
+/* ========================= */
+
+.benefits-Header {
+    margin-bottom: 20px;
+
+    text-align: center;
+
+    max-width: 900px;
 }
-.Apply-Button{
-    width: 130px;
-    height: 50px;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    background-color: #04AA6D;
-    padding: 10px 20px;
-    margin-top: 20px;
-    cursor: pointer;
-    border: none;
-    border-radius: 20px;
-}
-.Apply-Button:hover{
-    width: 150px;
-    height: 40px;
-    margin-top: 30px;
-    background-color: #04AA6D;
-    font-size: 16px;
-    transition: all 0.3s ease-in-out;
-}
-.benefitCardSection{
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    margin-top: 40px;
-}
-.benefitCard{
-    width: 300px;
-    height: 200px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    margin: 20px;
-}
-.benefitCard:hover{
-    width: 310px;
-    height: 210px;
-    margin: 15px;
-    padding: 25px;
-    background-image: url('https://res.cloudinary.com/ds3qgsy6r/image/upload/v1791310429/Minimal_Fintech_Background_with_Rupee_and_Charts_e6oxvu.png');
-    background-size: cover;
-    /* background-position: center; */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    transition: all 0.3s ease-in-out;
-}
-.benefitCardIcon{
-    font-size: 50px;
+
+.benefits-Header h2 {
+    font-size: clamp(28px, 3vw, 36px);
+
+    color: rgb(0, 35, 80);
+
     margin-bottom: 10px;
 }
-.thunder{
+
+.benefits-Header p {
+    font-size: clamp(16px, 1.5vw, 18px);
+
+    line-height: 1.5;
+}
+
+
+/* ========================= */
+/* Benefit Cards Container */
+/* ========================= */
+
+.benefitCards {
+    width: 100%;
+}
+
+
+/* ========================= */
+/* Benefit Card Section */
+/* ========================= */
+
+.benefitCardSection {
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+
+    width: 100%;
+
+    margin-top: 30px;
+
+    gap: 20px;
+}
+
+
+/* ========================= */
+/* Benefit Card */
+/* ========================= */
+
+.benefitCard {
+    width: 300px;
+    min-height: 200px;
+
+    background-color: rgba(255, 255, 255, 0.1);
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    margin: 10px;
+
+    box-sizing: border-box;
+}
+
+
+/* ========================= */
+/* Desktop / Tablet Hover */
+/* ========================= */
+
+.benefitCard:hover {
+    width: 310px;
+    min-height: 210px;
+
+    margin: 5px;
+
+    padding: 25px;
+
+    background-image: url('https://res.cloudinary.com/ds3qgsy6r/image/upload/v1791310429/Minimal_Fintech_Background_with_Rupee_and_Charts_e6oxvu.png');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* ========================= */
+/* Benefit Icons */
+/* ========================= */
+
+.benefitCardIcon {
+    font-size: 50px;
+
+    margin-bottom: 10px;
+}
+
+.thunder {
     color: goldenrod;
 }
-.lowRate{
+
+.lowRate {
     color: green;
 }
-.docs{
+
+.docs {
     color: grey;
 }
-.money{
+
+.money {
     color: green;
 }
-.time{
+
+.time {
     color: navy;
 }
-.benefitCardTitle{
+
+
+/* ========================= */
+/* Card Text */
+/* ========================= */
+
+.benefitCardTitle {
     margin-bottom: 10px;
+
     font-size: 22px;
-}
-.benefitCardDescription{
+
     text-align: center;
+}
+
+.benefitCardDescription {
+    text-align: center;
+
     font-size: 16px;
+
+    line-height: 1.5;
+}
+
+
+/* ========================= */
+/* Apply Button */
+/* ========================= */
+
+.Apply-Button {
+    width: 130px;
+    height: 50px;
+
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    background-color: #04AA6D;
+
+    padding: 10px 20px;
+
+    margin-top: 20px;
+
+    cursor: pointer;
+
+    border: none;
+
+    border-radius: 20px;
+
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* Apply Button Hover */
+
+.Apply-Button:hover {
+    width: 150px;
+    height: 40px;
+
+    margin-top: 30px;
+
+    background-color: #04AA6D;
+
+    font-size: 16px;
+}
+
+
+/* ================================================= */
+/* Tablet */
+/* ================================================= */
+
+@media (max-width: 1024px) {
+
+    /* ---------- Banner ---------- */
+
+    .banner-text {
+        width: 50%;
+    }
+
+    .banner-subtext {
+        width: 50%;
+    }
+
+
+    /* ---------- Benefits ---------- */
+
+    .benefits {
+        height: auto;
+
+        min-height: 100vh;
+
+        padding: 50px 30px;
+    }
+
+    .benefitCardSection {
+        justify-content: center;
+
+        flex-wrap: wrap;
+    }
+
+}
+
+
+/* ================================================= */
+/* Mobile */
+/* ================================================= */
+
+@media (max-width: 768px) {
+
+    /* ---------- Banner ---------- */
+
+    .banner {
+        min-height: 92vh;
+        padding: 30px 20px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+
+        /* Mobile-specific banner */
+
+        background-image: url('https://res.cloudinary.com/ds3qgsy6r/image/upload/v1791482094/Modern_Cityscape_Home_with_Flowing_Waves_wybkvx.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+
+    .banner-text {
+        width: 90%;
+
+        font-size: clamp(34px, 9vw, 48px);
+
+        margin: 0;
+    }
+
+
+    .banner-subtext {
+        width: 90%;
+
+        font-size: 18px;
+
+        line-height: 1.5;
+
+        margin-top: 15px;
+    }
+
+
+    /* ---------- Benefits ---------- */
+
+    .benefits {
+        min-height: auto;
+
+        padding: 50px 20px;
+    }
+
+
+    .benefits-Header {
+        width: 100%;
+
+        margin-bottom: 10px;
+    }
+
+
+    .benefits-Header h2 {
+        font-size: 28px;
+    }
+
+
+    .benefits-Header p {
+        font-size: 16px;
+    }
+
+
+    /* ---------- Cards ---------- */
+
+    .benefitCardSection {
+        flex-direction: column;
+
+        width: 100%;
+
+        margin-top: 20px;
+
+        gap: 20px;
+    }
+
+
+    .benefitCard {
+        width: min(100%, 350px);
+
+        min-height: 190px;
+
+        margin: 0;
+
+        background-image: url('https://res.cloudinary.com/ds3qgsy6r/image/upload/v1791310429/Minimal_Fintech_Background_with_Rupee_and_Charts_e6oxvu.png');
+
+        background-size: cover;
+
+        background-position: center;
+
+        background-repeat: no-repeat;
+    }
+
+
+    /* ---------- Disable Card Hover on Mobile ---------- */
+
+    .benefitCard:hover {
+        width: min(100%, 350px);
+
+        min-height: 190px;
+
+        margin: 0;
+
+        padding: 20px;
+
+        background-image: url('https://res.cloudinary.com/ds3qgsy6r/image/upload/v1791310429/Minimal_Fintech_Background_with_Rupee_and_Charts_e6oxvu.png');
+
+        background-size: cover;
+
+        background-position: center;
+
+        background-repeat: no-repeat;
+
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+        transition: none;
+    }
+
+
+    /* ---------- Apply Button ---------- */
+
+    .Apply-Button {
+        margin-top: 30px;
+    }
+
+}
+
+
+/* ================================================= */
+/* Small Mobile */
+/* ================================================= */
+
+@media (max-width: 480px) {
+
+    /* ---------- Banner ---------- */
+
+    .banner {
+        min-height: 85vh;
+
+        padding: 25px 15px;
+
+        background-position: center;
+
+        display: flex;
+
+        justify-content: start;
+
+        align-items: center;
+    }
+
+    .banner-text {
+        width: 95%;
+
+        margin-top: 5vh;
+
+        font-size: 36px;
+
+        text-align: center;
+    }
+
+    .banner-subtext {
+        width: 95%;
+
+        margin-top: 12px;
+
+        font-size: 16px;
+
+        line-height: 1.5;
+
+        text-align: center;
+    }
+
+
+    /* ---------- Benefits ---------- */
+
+    .benefits {
+        padding: 40px 15px;
+    }
+
+    .benefits-Header h2 {
+        font-size: 25px;
+    }
+
+    .benefits-Header p {
+        font-size: 15px;
+    }
+
+
+    /* ---------- Cards ---------- */
+
+    .benefitCard {
+        width: 100%;
+        min-height: 190px;
+    }
+
+    .benefitCardTitle {
+        font-size: 20px;
+    }
+
+    .benefitCardDescription {
+        font-size: 15px;
+    }
+
+
+    /* Keep mobile background */
+
+    .benefitCard,
+    .benefitCard:hover {
+        background-image: url('https://res.cloudinary.com/ds3qgsy6r/image/upload/v1791310429/Minimal_Fintech_Background_with_Rupee_and_Charts_e6oxvu.png');
+
+        background-size: cover;
+        background-position: center;
+    }
 }

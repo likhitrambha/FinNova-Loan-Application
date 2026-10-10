@@ -1,45 +1,284 @@
+/* ========================= */
+/* Form Page */
+/* ========================= */
 
-.Form-Page{
-    height: 91vh;
+.Form-Page {
+    width: 100%;
+    min-height: 91vh;
+
     background-image: url('https://res.cloudinary.com/ds3qgsy6r/image/upload/v1790948708/Soft_Blue_Mint_Gradient_Background_tnomrg.png');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    gap: 40px;
+
+    padding: 40px 5%;
+
+    box-sizing: border-box;
 }
-.Form-Container{
+
+
+/* ========================= */
+/* Form Container */
+/* ========================= */
+
+.Form-Container {
     background-color: rgba(255, 255, 255, 0.8);
+
     min-height: 70%;
     width: 400px;
+
     border-radius: 20px;
+
     padding: 40px 20px 40px 50px;
+
     display: flex;
     flex-direction: column;
+
     justify-content: space-between;
     align-items: flex-start;
+
     text-align: left;
+
+    box-sizing: border-box;
+
+    flex-shrink: 0;
 }
-.label-name{
+
+
+/* ========================= */
+/* Labels */
+/* ========================= */
+
+.label-name {
     font-size: 12px;
 }
-.input-name{
+
+
+/* ========================= */
+/* Inputs */
+/* ========================= */
+
+.input-name {
     width: 300px;
+
     padding: 5px 10px;
+
     margin-bottom: 5px;
+
     border-radius: 5px;
+
     border: 1px solid #ccc;
+
+    box-sizing: border-box;
 }
-.submit-button{
+
+
+/* ========================= */
+/* Submit Button */
+/* ========================= */
+
+.submit-button {
     background-color: #4CAF50;
+
     color: white;
+
     padding: 5px 20px;
+
     border: none;
+
     border-radius: 5px;
+
     cursor: pointer;
+
     margin-left: 100px;
 }
-.form-image{
+
+
+/* ========================= */
+/* Form Image */
+/* ========================= */
+
+.form-image {
     width: 30%;
+    max-width: 450px;
+
     height: auto;
+
+    object-fit: contain;
+}
+
+
+/* ================================================= */
+/* TABLET */
+/* 769px - 1024px */
+/* ================================================= */
+
+@media (max-width: 1024px) {
+
+    .Form-Page {
+        gap: 20px;
+
+        padding: 40px 3%;
+    }
+
+
+    .Form-Container {
+        width: 380px;
+
+        padding-left: 40px;
+    }
+
+
+    .input-name {
+        width: 300px;
+    }
+
+
+    .form-image {
+        width: 35%;
+
+        max-width: 350px;
+    }
+
+}
+
+
+/* ================================================= */
+/* MOBILE / SMALL TABLET */
+/* 768px and below */
+/* ================================================= */
+
+@media (max-width: 768px) {
+
+    .Form-Page {
+        min-height: auto;
+
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+
+        padding: 40px 20px;
+
+        gap: 30px;
+    }
+
+
+    /* ---------- Form ---------- */
+
+    .Form-Container {
+        width: min(100%, 450px);
+
+        min-height: auto;
+
+        padding: 35px 30px;
+
+        align-items: stretch;
+    }
+
+
+    /* ---------- Labels ---------- */
+
+    .label-name {
+        font-size: 14px;
+    }
+
+
+    /* ---------- Inputs ---------- */
+
+    .input-name {
+        width: 100%;
+
+        padding: 8px 10px;
+    }
+
+
+    /* ---------- Submit Button ---------- */
+
+    .submit-button {
+        margin-left: 0;
+
+        align-self: center;
+
+        padding: 8px 25px;
+    }
+
+
+    /* ---------- Hide Image ---------- */
+
+    .form-image {
+        display: none;
+    }
+
+}
+
+
+/* ================================================= */
+/* SMALL MOBILE */
+/* 480px and below */
+/* ================================================= */
+
+@media (max-width: 480px) {
+
+    .Form-Page {
+        padding: 30px 15px;
+
+        gap: 25px;
+    }
+
+
+    /* ---------- Form ---------- */
+
+    .Form-Container {
+        width: 100%;
+
+        padding: 30px 20px;
+
+        border-radius: 15px;
+    }
+
+
+    /* ---------- Labels ---------- */
+
+    .label-name {
+        font-size: 14px;
+    }
+
+
+    /* ---------- Inputs ---------- */
+
+    .input-name {
+        width: 100%;
+
+        padding: 9px 10px;
+
+        font-size: 14px;
+    }
+
+
+    /* ---------- Submit Button ---------- */
+
+    .submit-button {
+        margin-left: 0;
+
+        align-self: center;
+
+        padding: 9px 25px;
+
+        font-size: 14px;
+    }
+
+
+    /* ---------- Image stays hidden ---------- */
+
+    .form-image {
+        display: none;
+    }
+
 }
